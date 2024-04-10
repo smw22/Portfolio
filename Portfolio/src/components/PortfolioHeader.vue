@@ -11,8 +11,8 @@
         </div>
         <nav>
             <ul>
-                <li class="router-links">HJEMME</li>
-                <li class="router-links">OM MIG</li>
+                <li class="nav-links">HJEMME</li>
+                <li class="nav-links">OM MIG</li>
             </ul>
         </nav>
     </div>
@@ -20,17 +20,24 @@
 </header>
 </template>
 
-<style lang="scss"  scoped >
+<style lang="scss" scoped >
     .header-wrapper{
         background-color: #c9c9c9;
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
+        .name-logo{
+            font-family: "poppins";
+        }
         nav{
             ul{
                 display: flex;
                 gap: 50px;
-                .router-links{
+                .nav-links{
                 color: #000;
                 list-style-type: none
                 }

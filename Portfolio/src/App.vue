@@ -1,10 +1,12 @@
 <script setup>
 import { RouterView } from 'vue-router'
 import PortfolioHeader from './components/PortfolioHeader.vue';
+import FirstSection from './components/FirstSection.vue';
 </script>
 
 <template>
   <PortfolioHeader/>
+  <FirstSection/>
 
   <RouterView />
 </template>
