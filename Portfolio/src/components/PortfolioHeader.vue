@@ -7,7 +7,7 @@
     
     <div class="header-wrapper">
         <div class="name-logo">
-            <h1>SERGIO MORÓN WESTERGAARD</h1>
+            <h2>SERGIO MORÓN WESTERGAARD</h2>
         </div>
         <nav>
             <ul>
@@ -35,6 +35,7 @@
         align-items: center;
         .name-logo{
             font-family: "poppins";
+            font-style: italic;
         }
         nav{
             ul{
