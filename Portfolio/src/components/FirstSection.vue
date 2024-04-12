@@ -1,6 +1,7 @@
 <script setup>
 </script>
 
+
 <template>
     <div class="container">
         <div class="first-section">
@@ -18,9 +19,9 @@
     </div>
 </template>
 
+
 <style lang="scss" scoped>
     .container{
-        position: absolute;
         height: 100vh;
         display: flex;
         align-items: center;

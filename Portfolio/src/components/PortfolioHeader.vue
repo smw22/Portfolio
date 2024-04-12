@@ -13,6 +13,8 @@
             <ul>
                 <li class="nav-links">HJEMME</li>
                 <li class="nav-links">OM MIG</li>
+                <li class="nav-links">PROJEKTER</li>
+                <li class="nav-links">KONTAKT</li>
             </ul>
         </nav>
     </div>
@@ -27,6 +29,7 @@
         top:0;
         left: 0;
         width: 100%;
+        height: 80px;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -39,7 +42,9 @@
                 gap: 50px;
                 .nav-links{
                 color: #000;
-                list-style-type: none
+                list-style-type: none;
+                font-family: 'poppins';
+                font-weight: 500;
                 }
             }
 

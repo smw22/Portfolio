@@ -2,16 +2,21 @@
 import { RouterView } from 'vue-router'
 import PortfolioHeader from './components/PortfolioHeader.vue';
 import FirstSection from './components/FirstSection.vue';
+import SecondSection from './components/SecondSection.vue';
 </script>
 
 <template>
   <PortfolioHeader/>
   <FirstSection/>
+  <SecondSection/>
 
   <RouterView />
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
+body {
+  margin: 0 !important;
+}
 *{
   margin: 0;
   padding: 0;
