@@ -1,8 +1,9 @@
 <script setup>
+import { RouterLink } from "vue-router";
 </script>
 
 <template>
-    <div class="third-container">
+    <div id="scrollToThree" class="third-container">
         <h1 class="projects-title">Projekter</h1>
         <div class="projects">
 
@@ -80,12 +81,13 @@
 
 <style scoped lang="scss">
     .third-container{
-        padding: 50px 10%;
+        padding: 100px 10% 50px 10%;
         margin: 0 auto;
         .projects-title{
             font-family: 'poppins';
             font-size: 40px;
             margin-bottom: 50px;
+            text-align: center;
         }
         .projects{
             display: flex;
@@ -94,13 +96,14 @@
             margin-bottom: 50px;
             .project{
             display: flex;
+            gap: 50px;
             justify-content: space-between;
             align-items: center;
                 .project-image{
                     width: 600px;
                     height: 400px;
                     border-radius: 25px;
-                    background-color: #ff6622;
+                    background-image: linear-gradient(90deg, #2E005D , #FF6622);
                 }
                 .project-text{
                     width: 600px;
@@ -112,6 +115,7 @@
                     .project-description{
                         font-size: 20px;
                         margin-bottom: 15px;
+                        font-family: 'poppins';
                     }
                     .project-button{
                         width: fit-content;

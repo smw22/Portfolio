@@ -4,7 +4,7 @@
 
 
 <template>
-    <div class="second-container">
+    <div id="scrollToTwo" class="second-container">
 
         <h1 class="about-me-title">Om mig</h1>
         <div class="about-me-text-box">
@@ -24,47 +24,55 @@
         </div>
 
         <h1 class="tech-stack-title">Tech Stack</h1>
-        <p class="tech-stack-text">
+        <!-- <p class="tech-stack-text">
             Jeg har færdigheder i både Adobe-software, hvor jeg bruger en række Adobe-programmer til mit visuelle arbejde.
             Jeg dominerer webudvikling og bruger ofte frameworks som Bootstrap, Tailwind og Vue til at hjælpe mig med at øge udbyttet af mit arbejde. Desuden bruger jeg GitHub til at gemme og samle min kodningsproces med mig selv eller et team.
             Jeg har også færdigheder inden for UX/UI-design, en sektor, hvor jeg har udviklet mine kommunikationsevner, mine teamworkfærdigheder og min forståelse af al den psykologi og forskning, der ligger bag denne verden af webdesign. Jeg har også erfaring med fotografering og videoproduktion. Det er noget, jeg har lært over nogle år, og som jeg nu er ved at lære mere af gennem mit studie.
-            Endelig har jeg arbejdet med nogle medierelaterede programmer. Jeg er fortrolig med OBS Studio, Fl Studio, Audacity og Microsoft-software.
-        </p>
+        </p> -->
         <div class="tech-stack">
-            <div class="tech-stack-item">
-                <h3>Grafisk</h3>
-                <div class="tech-stack-item-apps">
-                    <div class="app"></div>
-                    <div class="app"></div>
-                    <div class="app"></div>
+            <div class="tech-stack-row">
+
+                <div class="tech-stack-item">
+                    <h3>Grafisk</h3>
+                    <div class="tech-stack-item-apps">
+                        <div class="app"><img src="../assets/illustrator-logo.png" alt="" class="app-image"></div>
+                        <div class="app"><img src="../assets/indesign-logo.png" alt="" class="app-image"></div>
+                        <div class="app"><img src="../assets/photoshop-logo.png" alt="" class="app-image"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="tech-stack-item">
-                <h3>Web Udvikling</h3>
-                <div class="tech-stack-item-apps">
-                    <div class="app"></div>
-                    <div class="app"></div>
-                    <div class="app"></div>
-                    <div class="app"></div>
-                    <div class="app"></div>
-                    <div class="app"></div>
+                <div class="tech-stack-item">
+                    <h3>Web Udvikling</h3>
+                    <div class="tech-stack-item-apps">
+                        <div class="app"><img src="../assets/html-logo.webp" alt="" class="app-image"></div>
+                        <div class="app"><img src="../assets/css-logo.webp" alt="" class="app-image"></div>
+                        <div class="app"><img src="../assets/javascript-logo.png" alt="" class="app-image"></div>
+                        <div class="app"><img src="../assets/php-logo.png" alt="" class="app-image"></div>
+                        <div class="app"><img src="../assets/bootstrap-logo.png" alt="" class="app-image"></div>
+                        <div class="app"><img src="../assets/vue-logo.png" alt="" class="app-image"></div>
+                    </div>
                 </div>
+
             </div>
-            <div class="tech-stack-item">
-                <h3>XD / UI</h3>
-                <div class="tech-stack-item-apps">
-                    <div class="app"></div>
-                    <div class="app"></div>
+
+            <div class="tech-stack-row">
+
+                <div class="tech-stack-item">
+                    <h3>XD / UI</h3>
+                    <div class="tech-stack-item-apps">
+                        <div class="app"><img src="../assets/xd-logo.png" alt="" class="app-image"></div>
+                        <div class="app"><img src="../assets/figma-logo.png" alt="" class="app-image"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="tech-stack-item">
-                <h3>Foto og Video</h3>
-                <div class="tech-stack-item-apps">
-                    <div class="app"></div>
-                    <div class="app"></div>
-                    <div class="app"></div>
+                <div class="tech-stack-item">
+                    <h3>Foto og Video</h3>
+                    <div class="tech-stack-item-apps">
+                        <div class="app"><img src="../assets/premierePro-logo.png" alt="" class="app-image"></div>
+                        <div class="app"><img src="../assets/photoshop-logo.png" alt="" class="app-image"></div>
+                        <div class="app"><img src="../assets/after-effects-logo.png" alt="" class="app-image"></div>
+                    </div>
                 </div>
-            </div>
+
+             </div>
         </div>
     </div>
 </template>
@@ -72,12 +80,15 @@
 
 <style lang="scss" scoped>
     .second-container{
-        padding: 50px 10%;
-        height: 100vh;
-        background-color: rgb(198, 198, 198);
+        padding: 0 10% 100px 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(230, 230, 230);
         margin: 0 auto;
         .about-me-title{
-            margin-bottom: 30px;
+            margin-bottom: 20px;
+            padding-top: 100px;
             font-family: "poppins";
             font-size: 40px;
         }
@@ -86,10 +97,11 @@
             gap: 100px;
             margin-bottom: 50px;
             .about-me-text{
-                font-size: 20px;
+                font-size: 16px;
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
+                font-family: 'poppins';
             }
             .about-me-button{
                 width: fit-content;
@@ -105,14 +117,13 @@
             }
             .cv-video{
             width: 100%;
-            aspect-ratio: 16/9;
             background-color: rgb(86, 86, 86);
             }
         }
 
         .tech-stack-title{
             font-family: "poppins";
-            text-align: center;
+            // text-align: center;
             margin-bottom: 10px;
         }
         .tech-stack-text{
@@ -126,6 +137,8 @@
             .tech-stack-item{
                 display: flex;
                 flex-direction: column;
+                align-items: center;
+                margin-bottom: 30px;
                 gap: 20px;
                 h3{
                     font-family: 'poppins';
@@ -137,7 +150,9 @@
                         width: 50px;
                         height: 50px;
                         border-radius: 100%;
-                        background-color: red;
+                        .app-image{
+                            height: 100%;
+                        }
                     }
                 }
             }

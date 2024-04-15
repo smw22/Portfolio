@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <div class="fourth-container">
+    <div id="scrollToFour" class="fourth-container">
         <h1 class="contact-title">Kontakt</h1>
         <div class="contact-addresses">
             <div class="contact-address">
@@ -12,6 +12,9 @@
             <div class="contact-address">
                 <h3><strong>Linkedin</strong></h3>
                 <p>linkedin/in/sergio-mw</p>
+                <div class="contact-icons">
+
+                </div>
             </div>
             
         </div>
@@ -22,7 +25,7 @@
     .fourth-container{
         padding: 100px 10%;
         margin: 0 auto;
-        background-color: rgb(198, 198, 198);
+        background-color: rgb(230, 230, 230);
         .contact-title{
         font-family: 'poppins';
         font-size: 40px;

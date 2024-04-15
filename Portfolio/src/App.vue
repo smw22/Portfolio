@@ -18,6 +18,9 @@ import FourthSection from './components/FourthSection.vue';
 </template>
 
 <style lang="scss">
+html {
+    scroll-behavior: smooth;
+}
 body {
   margin: 0 !important;
 }

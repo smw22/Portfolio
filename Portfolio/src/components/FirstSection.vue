@@ -3,7 +3,7 @@
 
 
 <template>
-    <div class="container">
+    <div id="scrollToOne" class="container">
         <div class="first-section">
             <div class="image">
                 <img src="../assets/foto-sergio.JPG" alt="" class="image-sergio">
