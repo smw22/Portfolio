@@ -18,6 +18,9 @@ window.addEventListener('scroll', () => {
         <div class="name-logo">
         <h2>SERGIO MORÓN WESTERGAARD</h2>
         </div>
+        <div class="phone-name-logo">
+        <h2>SMW</h2>
+        </div>
         <nav>
         <ul>
             <li class="nav-links"><a href="#scrollToOne" class="nav-links">HJEMME</a></li>
@@ -27,7 +30,7 @@ window.addEventListener('scroll', () => {
         </ul>
         </nav>
         <div class="phone-nav">
-            <img src="../assets/bootstrap-logo.png" alt="">
+            <img src="../assets/burguer-menu.png" alt="" class="phone-nav-icon">
             <div class="phone-nav-links">
 
             </div>
@@ -39,6 +42,7 @@ window.addEventListener('scroll', () => {
 <style lang="scss" scoped>
     header {
         position: fixed;
+        z-index: 1000;
         width: 100%;
         height: 80px;
         display: flex;
@@ -46,7 +50,11 @@ window.addEventListener('scroll', () => {
         align-items: center;
         transition: all 0.4s ease-in-out;
         .name-logo {
-        font-style: italic;
+            font-style: italic;
+        }
+        .phone-name-logo{
+            font-style: italic;
+            display: none;
         }
         nav {
             ul {
@@ -62,11 +70,8 @@ window.addEventListener('scroll', () => {
         }
         .phone-nav{
             display:none;
-            .cls-1 {
-                    fill: #000;
-                    stroke-width: 0px;
-                }
         }
+
     }
 
     .header-wrapper-scrolled {
@@ -74,15 +79,22 @@ window.addEventListener('scroll', () => {
         opacity: 1;
     }
     @media only screen and (max-width: 1000px) {
-        nav{
+        header .name-logo{
             display: none;
-        }   
-        .phone-nav{
+        }
+        header .phone-name-logo{
             display: block;
+        }
+        nav {
+            display: none;
+        }
+        header .phone-nav {
             display: flex;
             width: 40px;
             background-color: #000;
+            .phone-nav-icon{
+                width: 100%;
+            }
         }
-        
     }
 </style>
