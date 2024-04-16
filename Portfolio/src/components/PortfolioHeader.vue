@@ -26,6 +26,12 @@ window.addEventListener('scroll', () => {
             <li class="nav-links"><a href="#scrollToFour" class="nav-links">KONTAKT</a></li>
         </ul>
         </nav>
+        <div class="phone-nav">
+            <img src="../assets/bootstrap-logo.png" alt="">
+            <div class="phone-nav-links">
+
+            </div>
+        </div>
     </header>
 </template>
   
@@ -40,7 +46,6 @@ window.addEventListener('scroll', () => {
         align-items: center;
         transition: all 0.4s ease-in-out;
         .name-logo {
-        font-family: "poppins";
         font-style: italic;
         }
         nav {
@@ -50,16 +55,34 @@ window.addEventListener('scroll', () => {
                 .nav-links {
                 color: #000;
                 list-style-type: none;
-                font-family: 'poppins';
                 font-weight: 500;
                 text-decoration: none; 
                 }
             }
+        }
+        .phone-nav{
+            display:none;
+            .cls-1 {
+                    fill: #000;
+                    stroke-width: 0px;
+                }
         }
     }
 
     .header-wrapper-scrolled {
         background-color: rgb(230, 230, 230);
         opacity: 1;
+    }
+    @media only screen and (max-width: 1000px) {
+        nav{
+            display: none;
+        }   
+        .phone-nav{
+            display: block;
+            display: flex;
+            width: 40px;
+            background-color: #000;
+        }
+        
     }
 </style>

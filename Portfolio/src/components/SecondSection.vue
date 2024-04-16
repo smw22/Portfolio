@@ -19,8 +19,8 @@
                 <button class="about-me-button">Hent mit CV!</button>
             </div>
             <div class="cv-video">
-
-            </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9V5VSG3U1GM?si=N2w5Jdvpie86u7yk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>  
         </div>
 
         <h1 class="tech-stack-title">Tech Stack</h1>
@@ -89,7 +89,6 @@
         .about-me-title{
             margin-bottom: 20px;
             padding-top: 100px;
-            font-family: "poppins";
             font-size: 40px;
         }
         .about-me-text-box{
@@ -101,7 +100,6 @@
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
-                font-family: 'poppins';
             }
             .about-me-button{
                 width: fit-content;
@@ -115,15 +113,9 @@
                 box-shadow: 1px 1px 5px #000;
 
             }
-            .cv-video{
-            width: 100%;
-            background-color: rgb(86, 86, 86);
-            }
         }
 
         .tech-stack-title{
-            font-family: "poppins";
-            // text-align: center;
             margin-bottom: 10px;
         }
         .tech-stack-text{
@@ -140,9 +132,6 @@
                 align-items: center;
                 margin-bottom: 30px;
                 gap: 20px;
-                h3{
-                    font-family: 'poppins';
-                }
                 .tech-stack-item-apps{
                 display: flex;
                 gap: 30px;

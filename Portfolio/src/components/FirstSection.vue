@@ -47,14 +47,41 @@
                 text-align: center;
                 .name-first-section{
                     font-size: 100px;
-                    font-family: "poppins";
                     margin-bottom: 0;
                 }
                 .subtitle-first-section{
                     font-size: 25px;
-                    font-family: "poppins";
                 }
             }
         } 
+        // .first-section{
+        // display: flex;
+        // flex-direction: row;
+        // align-items: center;
+        // width: 90%;
+        // margin: 0 auto;
+        //     .image{
+        //         width: 400px;
+        //         .image-sergio{
+        //             width: 100%;
+        //             border-radius: 100%;
+        //         }
+        //     }
+        //     .text{
+        //         grid-column-start: 6;
+        //         grid-column-end: 15;
+        //         text-align: center;
+        //         .name-first-section{
+        //             font-size: 100px;
+        //             margin-bottom: 0;
+        //         }
+        //         .subtitle-first-section{
+        //             font-size: 25px;
+        //         }
+        //     }
+        // } 
+    }
+    @media only screen and (max-width: 1000px) {
+        
     }
 </style>

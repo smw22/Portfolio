@@ -1,5 +1,20 @@
 <script setup>
-import { RouterLink } from "vue-router";
+// import { RouterLink } from "vue-router";
+// import{ ref, computed } from 'vue'
+// import getPortfolio from "@/modules/getPortfolio"
+
+// const { portfolioItems } = getPortfolio()
+  
+//   let selectedCategory = ref("")
+  
+//   const filteredPortfolioItems = computed(() =>{
+//     if (selectedCategory.value == '') {
+//       return portfolioItems.value
+//     }
+//     else {
+//       return portfolioItems.value.filter(item => item.category == selectedCategory.value)
+//     }
+//   })
 </script>
 
 <template>
@@ -14,7 +29,7 @@ import { RouterLink } from "vue-router";
                 <div class="project-text">
                     <h1 class="project-title">Maysol</h1>
                     <div class="project-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolore accusamus est repellat asperiores at, id exercitationem quasi! Ipsa, consectetur? Exercitationem architecto doloribus magnam culpa ea quidem voluptatibus dolorem aut?
+                        En hele hjemmeside for en ejedomsmeglær firma som er brugt for at leje deres boliger og andre funktioner som hus management eller reservation af aktiviterer.
                     </div>
                     <button class="project-button">Læse mere</button>
                 </div>
@@ -84,7 +99,6 @@ import { RouterLink } from "vue-router";
         padding: 100px 10% 50px 10%;
         margin: 0 auto;
         .projects-title{
-            font-family: 'poppins';
             font-size: 40px;
             margin-bottom: 50px;
             text-align: center;
@@ -108,14 +122,12 @@ import { RouterLink } from "vue-router";
                 .project-text{
                     width: 600px;
                     .project-title{
-                        font-family: 'poppins';
                         font-weight: 500;
                         margin-bottom: 0;
                     }
                     .project-description{
                         font-size: 20px;
                         margin-bottom: 15px;
-                        font-family: 'poppins';
                     }
                     .project-button{
                         width: fit-content;

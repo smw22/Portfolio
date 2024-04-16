@@ -6,14 +6,16 @@
         <h1 class="contact-title">Kontakt</h1>
         <div class="contact-addresses">
             <div class="contact-address">
-                <h3><strong>Email</strong></h3>
+                <h3 class="contact-adress-title"><strong>Email</strong></h3>
                 <p>sergiomoronwestergaard@gmail.com</p>
             </div>
             <div class="contact-address">
-                <h3><strong>Linkedin</strong></h3>
-                <p>linkedin/in/sergio-mw</p>
+                <h3 class="contact-adress-title"><strong>Socialer</strong></h3>
                 <div class="contact-icons">
-
+                    <img src="../assets/linkedin-logo.svg" alt="" class="contact-icons-images">
+                    <img src="../assets/github-logo.svg" alt="" class="contact-icons-images">
+                    <img src="../assets/messenger-logo.svg" alt="" class="contact-icons-images">
+                    <img src="../assets/whatsapp-logo.svg" alt="" class="contact-icons-images">
                 </div>
             </div>
             
@@ -27,7 +29,6 @@
         margin: 0 auto;
         background-color: rgb(230, 230, 230);
         .contact-title{
-        font-family: 'poppins';
         font-size: 40px;
         margin-bottom: 20px;
         }
@@ -35,7 +36,17 @@
             display: flex;
             gap: 200px;
             font-size: 20px;
-            font-family: 'poppins';
+            .contact-adress-title{
+                margin-bottom: 10px;
+            }
+            .contact-icons{
+                width: 30px;
+                display: flex;
+                gap: 20px;
+                .contact-icons-images{
+                    width: 100%;
+                }
+            }
         }
     }
     
