@@ -32,7 +32,6 @@ window.addEventListener('scroll', () => {
         <div class="phone-nav">
             <img src="../assets/burguer-menu.png" alt="" class="phone-nav-icon">
             <div class="phone-nav-links">
-
             </div>
         </div>
     </header>
