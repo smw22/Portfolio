@@ -15,14 +15,14 @@ const getPortfolioItems = () => {
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolore accusamus est repellat asperiores at, id exercitationem quasi! Ipsa, consectetur? Exercitationem architecto doloribus magnam culpa ea quidem voluptatibus dolorem aut?',
         button: 'Læse mere',
         image: image1,
-        category: web,
+        category: "web",
         },
         {
         id: 2,
         title: 'Trapholt',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolore accusamus est repellat asperiores at, id exercitationem quasi! Ipsa, consectetur? Exercitationem architecto doloribus magnam culpa ea quidem voluptatibus dolorem aut?',
         image: image2,
-        category: web,
+        category: "web",
         },
         {
         id: 3,
@@ -30,7 +30,7 @@ const getPortfolioItems = () => {
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolore accusamus est repellat asperiores at, id exercitationem quasi! Ipsa, consectetur? Exercitationem architecto doloribus magnam culpa ea quidem voluptatibus dolorem aut?',
         button: 'Læse mere',
         image: image3,
-        category: design,
+        category: "design",
         },
         {
         id: 4,
@@ -38,7 +38,7 @@ const getPortfolioItems = () => {
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolore accusamus est repellat asperiores at, id exercitationem quasi! Ipsa, consectetur? Exercitationem architecto doloribus magnam culpa ea quidem voluptatibus dolorem aut?',
         button: 'Læse mere',
         image: image4,
-        category: web,
+        category: "web",
         },
         {
         id: 5,
@@ -46,7 +46,7 @@ const getPortfolioItems = () => {
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolore accusamus est repellat asperiores at, id exercitationem quasi! Ipsa, consectetur? Exercitationem architecto doloribus magnam culpa ea quidem voluptatibus dolorem aut?',
         button: 'Læse mere',
         image: image5,
-        category: design,
+        category: "design",
         }
     ])
     

@@ -5,7 +5,7 @@
 <template>
     <div id="scrollToOne" class="container">
         <div class="blur-container">
-            <svg width="899" height="873" viewBox="0 0 899 873" fill="none" xmlns="http://www.w3.org/2000/svg" class="blur-svg-1">
+            <svg width="450" height="435" viewBox="0 0 899 873" fill="none" xmlns="http://www.w3.org/2000/svg" class="blur-svg-1">
             <g filter="url(#filter0_f_18_5)">
             <ellipse cx="309" cy="478" rx="440" ry="328" fill="#7E00FF"/>
             </g>
@@ -18,7 +18,7 @@
             </defs>
             </svg>
 
-            <svg width="954" height="733" viewBox="0 0 954 733" fill="none" xmlns="http://www.w3.org/2000/svg" class="blur-svg-2">
+            <svg width="425" height="350" viewBox="0 0 954 733" fill="none" xmlns="http://www.w3.org/2000/svg" class="blur-svg-2">
             <g filter="url(#filter0_f_18_7)">
             <path d="M746.772 639.194C657.568 690.752 332.168 476.616 150.942 342.151C350.621 370.945 433.017 241.672 459.907 172.303C486.797 102.935 884.135 203.623 940.735 458.035C997.336 712.447 858.278 574.746 746.772 639.194Z" fill="#FF7B40"/>
             </g>
@@ -31,7 +31,7 @@
             </defs>
             </svg>
 
-            <svg width="828" height="662" viewBox="0 0 828 662" fill="none" xmlns="http://www.w3.org/2000/svg" class="blur-svg-3">
+            <svg width="414" height="330" viewBox="0 0 828 662" fill="none" xmlns="http://www.w3.org/2000/svg" class="blur-svg-3">
             <g filter="url(#filter0_f_18_8)">
             <path d="M927.041 166.401C1224.71 163.174 1023.93 395.444 886.33 511.982C674.985 440.458 234.117 257.362 161.41 97.1707C70.5255 -103.069 565.212 -83.699 572.802 24.9541C580.392 133.607 554.948 170.435 927.041 166.401Z" fill="#F36F34"/>
             </g>
@@ -44,7 +44,7 @@
             </defs>
             </svg>
 
-            <svg width="1280" height="633" viewBox="0 0 1280 633" fill="none" xmlns="http://www.w3.org/2000/svg" class="blur-svg-4">
+            <svg width="640" height="315" viewBox="0 0 1280 633" fill="none" xmlns="http://www.w3.org/2000/svg" class="blur-svg-4">
             <g filter="url(#filter0_f_18_6)">
             <path d="M475.003 428.828C265.425 430.669 95.914 143.522 24 -27.5075C279.808 73.73 594.175 12.3739 736.975 -27.5075C879.776 -67.3889 1324.62 165.764 1032.85 374.375C741.085 582.985 736.975 426.527 475.003 428.828Z" fill="#B289DC"/>
             </g>

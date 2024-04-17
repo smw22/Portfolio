@@ -1,28 +1,67 @@
 <script setup>
-// import { RouterLink } from "vue-router";
-// import{ ref, computed } from 'vue'
-// import getPortfolio from "@/modules/getPortfolio"
+import { RouterLink } from "vue-router";
+import{ ref, computed } from 'vue'
+import getPortfolio from "@/modules/getPortfolio"
 
-// const { portfolioItems } = getPortfolio()
+const { portfolioItems } = getPortfolio()
   
-//   let selectedCategory = ref("")
+  let selectedCategory = ref("")
   
-//   const filteredPortfolioItems = computed(() =>{
-//     if (selectedCategory.value == '') {
-//       return portfolioItems.value
-//     }
-//     else {
-//       return portfolioItems.value.filter(item => item.category == selectedCategory.value)
-//     }
-//   })
+  const filteredPortfolioItems = computed(() =>{
+    if (selectedCategory.value == '') {
+      return portfolioItems.value
+    }
+    else {
+      return portfolioItems.value.filter(item => item.category == selectedCategory.value)
+    }
+  });
+
+  const toggleActive = (item) => {
+  item.active = !item.active;
+  };
+
 </script>
 
 <template>
     <div id="scrollToThree" class="third-container">
         <h1 class="projects-title">Projekter</h1>
+
         <div class="projects">
 
-            <div class="project-1 project">
+            <div v-for="(portfolioItem, index) in filteredPortfolioItems" :key="portfolioItem.id" class="project" :class="{ 'reverse': index % 2 !== 0 }">
+
+                <div class="project-image">
+                    <!-- <img :src="portfolioItem.image" alt=""> -->
+                </div>
+                <div class="project-text">
+                    <h1 class="project-title">{{ portfolioItem.title }}</h1>
+                    <div class="project-description">
+                        {{ portfolioItem.description }}                  
+                    </div>
+                    <button class="project-button">
+                        <router-link :to="`/projects/${portfolioItem.id}`">
+                            Læse mere    
+                        </router-link>
+                    </button>
+                </div>
+
+                <!-- <h2>{{ portfolioItem.title }}</h2>
+                <p>{{ portfolioItem.description }}</p>
+                <p :class="portfolioItem.category">{{ portfolioItem.category }}</p>
+                <router-link :to="`/projects/${portfolioItem.id}`">
+                Go to Portfolio items     
+                </router-link>
+                
+                <div v-if="portfolioItem.link">
+                <a :href="portfolioItem.link">Link</a>
+                </div>
+                <div v-else>
+        
+                </div> -->
+
+            </div>
+
+            <!-- <div class="project-1 project">
                 <div class="project-image">
 
                 </div>
@@ -88,7 +127,7 @@
                     </div>
                     <button class="project-button">Læse mere</button>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </div>
@@ -113,6 +152,9 @@
             gap: 50px;
             justify-content: space-between;
             align-items: center;
+            &.reverse {
+                flex-direction: row-reverse; // This will reverse the flex direction for even projects
+            }
                 .project-image{
                     width: 600px;
                     height: 400px;
