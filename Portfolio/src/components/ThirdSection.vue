@@ -39,7 +39,7 @@ const { portfolioItems } = getPortfolio()
                         {{ portfolioItem.description }}                  
                     </div>
                     <button class="project-button">
-                        <router-link :to="`/projects/${portfolioItem.id}`">
+                        <router-link :to="`/projects/${portfolioItem.id}`" class="project-button">
                             Læse mere    
                         </router-link>
                     </button>
@@ -60,74 +60,6 @@ const { portfolioItems } = getPortfolio()
                 </div> -->
 
             </div>
-
-            <!-- <div class="project-1 project">
-                <div class="project-image">
-
-                </div>
-                <div class="project-text">
-                    <h1 class="project-title">Maysol</h1>
-                    <div class="project-description">
-                        En hele hjemmeside for en ejedomsmeglær firma som er brugt for at leje deres boliger og andre funktioner som hus management eller reservation af aktiviterer.
-                    </div>
-                    <button class="project-button">Læse mere</button>
-                </div>
-            </div>
-
-            <div class="project-2 project">
-                <div class="project-text">
-                    <h1 class="project-title">Trapholt</h1>
-                    <div class="project-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolore accusamus est repellat asperiores at, id exercitationem quasi! Ipsa, consectetur? Exercitationem architecto doloribus magnam culpa ea quidem voluptatibus dolorem aut?
-                    </div>
-                    <button class="project-button">Læse mere</button>
-                </div>
-                <div class="project-image">
-
-                </div>
-            </div>
-
-            <div class="project-3 project">
-                <div class="project-image">
-
-                </div>
-                <div class="project-text">
-                    <h1 class="project-title">Assasin App</h1>
-                    <div class="project-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolore accusamus est repellat asperiores at, id exercitationem quasi! Ipsa, consectetur? Exercitationem architecto doloribus magnam culpa ea quidem voluptatibus dolorem aut?
-
-                    </div>
-                    <button class="project-button">Læse mere</button>
-                </div>
-            </div>
-
-            <div class="project-4 project">
-                <div class="project-text">
-                    <h1 class="project-title">Watch Shop</h1>
-                    <div class="project-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolore accusamus est repellat asperiores at, id exercitationem quasi! Ipsa, consectetur? Exercitationem architecto doloribus magnam culpa ea quidem voluptatibus dolorem aut?
-
-                    </div>
-                    <button class="project-button">Læse mere</button>
-                </div>
-                <div class="project-image">
-
-                </div>
-            </div>
-
-            <div class="project-5 project">
-                <div class="project-image">
-
-                </div>
-                <div class="project-text">
-                    <h1 class="project-title">Kantine App</h1>
-                    <div class="project-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolore accusamus est repellat asperiores at, id exercitationem quasi! Ipsa, consectetur? Exercitationem architecto doloribus magnam culpa ea quidem voluptatibus dolorem aut?
-
-                    </div>
-                    <button class="project-button">Læse mere</button>
-                </div>
-            </div> -->
 
         </div>
     </div>
@@ -152,17 +84,17 @@ const { portfolioItems } = getPortfolio()
             gap: 50px;
             justify-content: space-between;
             align-items: center;
-            &.reverse {
-                flex-direction: row-reverse; // This will reverse the flex direction for even projects
-            }
+                &.reverse {
+                    flex-direction: row-reverse; // This will reverse the flex direction for even projects
+                }
                 .project-image{
-                    width: 600px;
-                    height: 400px;
+                    width: 50%;
+                    aspect-ratio: 16 / 10;
                     border-radius: 25px;
                     background-image: linear-gradient(90deg, #2E005D , #FF6622);
                 }
                 .project-text{
-                    width: 600px;
+                    width: 40%;
                     .project-title{
                         font-weight: 500;
                         margin-bottom: 0;
@@ -173,6 +105,7 @@ const { portfolioItems } = getPortfolio()
                     }
                     .project-button{
                         width: fit-content;
+                        text-decoration: none;
                         padding: 10px 15px;
                         border-radius: 50px;
                         color: #e0e0e0;
@@ -185,5 +118,11 @@ const { portfolioItems } = getPortfolio()
             }
         }
         
+    }
+
+    @media only screen and (max-width: 1500px) {
+        .third-container .projects .project .project-description{
+            font-size: 15px;
+        }
     }
 </style>

@@ -126,6 +126,7 @@
             display: flex;
             justify-content: space-around;
             text-align: center;
+            flex-wrap: wrap;
             .tech-stack-item{
                 display: flex;
                 flex-direction: column;
@@ -134,6 +135,8 @@
                 gap: 20px;
                 .tech-stack-item-apps{
                 display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
                 gap: 30px;
                     .app{
                         width: 50px;
@@ -144,6 +147,24 @@
                         }
                     }
                 }
+            }
+        }
+    }
+    @media only screen and (max-width: 1500px) {
+        .second-container{
+            .about-me-text-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+            }
+        }
+    }
+    @media only screen and (max-width: 700px) {
+        .second-container{
+            iframe{
+                width: 300px;
+                height: 200px;
             }
         }
     }

@@ -96,6 +96,8 @@
         margin: 0 auto;
             .image{
                 position: absolute;
+                display: flex;
+                align-items: center;
                 width: 400px;
                 left: 50%;
                 top: 50%;
@@ -131,7 +133,7 @@
                 position: absolute;
                 width: 300px;
                 left: 50%;
-                top: 50%;
+                top: 52%;
                 transform: translate(-150%, -50%);
                     .image-sergio{
                         width: 100%;
@@ -157,7 +159,7 @@
                 position: absolute;
                 width: 200px;
                 left: 50%;
-                top: 62%;
+                top: 68%;
                 transform: translate(-50%, -50%);
                     .image-sergio{
                         width: 100%;
@@ -168,7 +170,7 @@
                 width: 90%;
                 position: absolute;
                 left: 50%;
-                top: 38%;
+                top: 40%;
                 transform: translate(-50%, -50%);
                 text-align: center;
                     .name-first-section{
