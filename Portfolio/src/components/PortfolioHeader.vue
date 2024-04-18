@@ -10,6 +10,8 @@ window.addEventListener('scroll', () => {
     headerRef.value.classList.remove('header-wrapper-scrolled');
   }
 });
+
+
 </script>
 
 
@@ -28,12 +30,14 @@ window.addEventListener('scroll', () => {
             <li class="nav-links"><a href="#scrollToThree" class="nav-links">PROJEKTER</a></li>
             <li class="nav-links"><a href="#scrollToFour" class="nav-links">KONTAKT</a></li>
         </ul>
-        </nav>
-        <div class="phone-nav">
-            <img src="../assets/burguer-menu.png" alt="" class="phone-nav-icon">
-            <div class="phone-nav-links">
-            </div>
+
+        <div class="ham-menu phone-nav">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
+        
+        </nav>
     </header>
 </template>
   
@@ -70,7 +74,6 @@ window.addEventListener('scroll', () => {
         .phone-nav{
             display:none;
         }
-
     }
 
     .header-wrapper-scrolled {
@@ -84,15 +87,56 @@ window.addEventListener('scroll', () => {
         header .phone-name-logo{
             display: block;
         }
-        nav {
-            display: none;
-        }
-        header .phone-nav {
-            display: flex;
+        nav .ham-menu {
+            display: block;
+            height: 50px;
             width: 40px;
-            background-color: #000;
-            .phone-nav-icon{
+            margin-left: auto;
+            position: relative;
+            span{
+                height: 5px;
                 width: 100%;
+                background-color: #6F86FF;
+                border-radius: 25px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                transition: .3s ease;
+            }
+            span:nth-child(1) {
+                top: 25%;
+            }
+            span:nth-child(2) {
+                width: 66%;
+                transform: translate(-28%, -50%);
+            }
+            span:nth-child(3) {
+                top: 75%;
+                width: 33%;
+                transform: translate(43.33%, -50%);
+            }
+        }
+        header{
+            nav{
+                ul{
+                background-color:  #ff6622;
+                height: 60vh;
+                width: 100%;
+                max-width: 450px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                // right: -450px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;    
+                justify-content: center;
+                text-align: center;
+                font-size: 20px;
+                color: white;
+                transition: .3s ease;
+                }
             }
         }
     }

@@ -52,24 +52,43 @@ window.addEventListener('scroll', () => {
         <div v-else>
             <div class="project-site-container">
                 <h1 class="project-title">{{ specificPortfolioItems.title }}</h1>
+                <div class="line"></div>
                 <div class="project-section">
                     <div class="project-text">
-                        <div class="text-description">
-                            <button> {{ specificPortfolioItems.category }}</button>
-                            <p> {{ specificPortfolioItems.description }}</p>
+                        <div class="project-information">
+                            <div class="specific-information">
+                                <h1 class="project-data-title">Role</h1>
+                                <p class="project-data"> {{ specificPortfolioItems.category }}</p>
+                            </div>
+                            <div class="specific-information">
+                                <h1 class="project-data-title">Dato</h1>
+                                <p class="project-data"> {{ specificPortfolioItems.date }}</p>
+                            </div>
+                            <div class="specific-information">
+                                <h1 class="project-data-title">Oversigt</h1>
+                                <p class="project-data"> {{ specificPortfolioItems.overview }}</p>
+                            </div>
+                            
                         </div>
-                        <div class="project-buttons">
-                            <button>
-                                GitHub
-                            </button>
-                            <button>
-                                Se Demo
-                            </button>
-                        </div>
+
                     </div>
+                    
                     <div class="project-image-box">
                     <img :src="specificPortfolioItems.image" alt="" class="project-image">
                     </div>
+
+                    <div class="text-description">
+                            <p> {{ specificPortfolioItems.description }}</p>
+                    </div>
+                    <div class="project-buttons">
+                        <button>
+                            GitHub
+                        </button>
+                        <button>
+                            Se Demo
+                        </button>
+                    </div>
+
                 </div>
             </div>
 
@@ -124,19 +143,45 @@ window.addEventListener('scroll', () => {
         opacity: 1;
     }
 
+
+
+
     .project-title{
         margin: 0 auto;
         width: fit-content;
-        margin-bottom: 50px;
+        font-size: 4em;
+    }
+    .line{
+        height: 2px;
+        width: 100%;
+        background-color: #000;
+        margin: 0 auto 50px auto;
     }
 
     .project-site-container{
         padding: 100px 10%;
         .project-section{
             display: flex;
-            gap: 100px;
+            flex-direction: column;
+
+            .project-information{
+                display: flex;
+                justify-content: space-around;
+                .project-data-title{
+                    font-size: 2em;
+                    font-weight: 500;
+                }
+                .project-data{
+                    font-size: 16px;
+                }
+            }
             .project-text{
                 text-align: center;
+                .category-button{
+                    border: solid 2px #ff6622;
+                    width: 100px;
+                    border-radius: 16px;
+                }
                 .project-buttons{
                     display: flex;
                     justify-content: center;
