@@ -4,8 +4,6 @@ import FirstSection from '@/components/FirstSection.vue';
 import SecondSection from '@/components/SecondSection.vue';
 import ThirdSection from '@/components/ThirdSection.vue';
 import FourthSection from '@/components/FourthSection.vue';
-
-
 </script>
 
 <template>

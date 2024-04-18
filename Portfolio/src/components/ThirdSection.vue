@@ -109,11 +109,15 @@ const { portfolioItems } = getPortfolio()
                         padding: 10px 15px;
                         border-radius: 50px;
                         color: #e0e0e0;
-                        background-image: linear-gradient(30deg, #2E005D , #FF6622);
+                        // border: 2px solid #000;
                         border: 0;
                         font-weight: 700;
                         font-size: 14px;
+                        background-image: linear-gradient(30deg, #2E005D , #FF6622);
                     }
+                    // .project-button:hover{
+                    //     background-image: linear-gradient(30deg, #2E005D , #FF6622);
+                    // }
                 }
             }
         }
@@ -121,8 +125,73 @@ const { portfolioItems } = getPortfolio()
     }
 
     @media only screen and (max-width: 1500px) {
-        .third-container .projects .project .project-description{
-            font-size: 15px;
+        .third-container{
+            .projects{
+                .project{
+                    .project-text{
+                        .project-description{
+                            font-size: 16px;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .third-container{
+        padding: 100px 10% 50px 10%;
+        margin: 0 auto;
+            .projects-title{
+                font-size: 40px;
+                margin-bottom: 50px;
+                text-align: center;
+            }
+            .projects{
+                display: flex;
+                flex-direction: column;
+                gap: 100px;
+                margin-bottom: 50px;
+                .project{
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                justify-content: space-between;
+                align-items: center;
+                    &.reverse {
+                        flex-direction: column; // This will reverse the flex direction for even projects
+                    }
+                    .project-image{
+                        width: 100%;
+                        aspect-ratio: 16 / 10;
+                        border-radius: 25px;
+                        background-image: linear-gradient(90deg, #2E005D , #FF6622);
+                    }
+                    .project-text{
+                        width: 100%;
+                        .project-title{
+                            font-weight: 500;
+                            margin-bottom: 0;
+                        }
+                        .project-description{
+                            font-size: 16px;
+                            margin-bottom: 15px;
+                        }
+                        .project-button{
+                            width: fit-content;
+                            text-decoration: none;
+                            padding: 10px 15px;
+                            border-radius: 50px;
+                            color: #e0e0e0;
+                            background-image: linear-gradient(30deg, #2E005D , #FF6622);
+                            border: 0;
+                            font-weight: 700;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }  
         }
     }
 </style>

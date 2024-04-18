@@ -5,7 +5,7 @@
 <template>
     <div id="scrollToOne" class="container">
         <div class="blur-container">
-            <svg width="450" height="435" viewBox="0 0 899 873" fill="none" xmlns="http://www.w3.org/2000/svg" class="blur-svg-1">
+            <!-- <svg width="450" height="435" viewBox="0 0 899 873" fill="none" xmlns="http://www.w3.org/2000/svg" class="blur-svg-1">
             <g filter="url(#filter0_f_18_5)">
             <ellipse cx="309" cy="478" rx="440" ry="328" fill="#7E00FF"/>
             </g>
@@ -55,7 +55,7 @@
             <feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_18_6"/>
             </filter>
             </defs>
-            </svg>
+            </svg> -->
 
 
 
