@@ -45,14 +45,8 @@ const { portfolioItems } = getPortfolio()
                     </button>
                 </div>
 
-                <!-- <h2>{{ portfolioItem.title }}</h2>
-                <p>{{ portfolioItem.description }}</p>
-                <p :class="portfolioItem.category">{{ portfolioItem.category }}</p>
-                <router-link :to="`/projects/${portfolioItem.id}`">
-                Go to Portfolio items     
-                </router-link>
-                
-                <div v-if="portfolioItem.link">
+<!--                 
+                <div v-if="portfolioItem.link" class="link">
                 <a :href="portfolioItem.link">Link</a>
                 </div>
                 <div v-else>

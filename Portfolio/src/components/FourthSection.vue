@@ -12,10 +12,10 @@
             <div class="contact-address">
                 <h3 class="contact-address-title"><strong>Medier</strong></h3>
                 <div class="contact-icons">
-                    <a href="https://www.linkedin.com/in/sergio-mw/" class="contact-icons-links"><img src="../assets/linkedin-logo.svg" alt="" class="contact-icons-images"></a>
-                    <a href="https://github.com/smw22" class="contact-icons-links"><img src="../assets/github-logo.svg" alt="" class="contact-icons-images"></a>
-                    <a href="http://m.me/sergiomw" class="contact-icons-links"><img src="../assets/messenger-logo.svg" alt="" class="contact-icons-images"></a>
-                    <a href="https://wa.me/4550355856" class="contact-icons-links"><img src="../assets/whatsapp-logo.svg" alt="" class="contact-icons-images"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/sergio-mw/" class="contact-icons-links"><img src="../assets/linkedin-logo.svg" alt="" class="contact-icons-images"></a>
+                    <a target="_blank" href="https://github.com/smw22" class="contact-icons-links"><img src="../assets/github-logo.svg" alt="" class="contact-icons-images"></a>
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100084622957233" class="contact-icons-links"><img src="../assets/messenger-logo.svg" alt="" class="contact-icons-images"></a>
+                    <a target="_blank" href="https://wa.me/4550355856" class="contact-icons-links"><img src="../assets/whatsapp-logo.svg" alt="" class="contact-icons-images"></a>
                    
                     <!-- <img src="../assets/linkedin-logo.svg" alt="" class="contact-icons-images">
                     <img src="../assets/github-logo.svg" alt="" class="contact-icons-images">

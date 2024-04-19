@@ -28,6 +28,8 @@ const getPortfolioItems = () => {
         date: "23/03/2024",
         category: "UI Design / Coding",
         overview: "Udvikling af hjemmeside til Maysol, en ejemdomsmægler i Fuengirola, Spanien.",
+        github_link: "https://github.com/smw22/maysol-website",
+        demo_link: "https://smwur.dk/"
         },
         {
         id: 2,
@@ -38,6 +40,8 @@ const getPortfolioItems = () => {
         date: "16/12/2023",
         category: "UI Design / Coding",
         overview: "Redesignet hjemmeside til Trapholt, en kunst museum i Kolding, Danmark.",
+        github_link: "https://github.com/smw22/Trapholt",
+        demo_link: "https://sergioswordpresstest.dk/index.html",
         },
         {
         id: 3,
@@ -60,6 +64,7 @@ const getPortfolioItems = () => {
         date: "23/11/2023",
         category: "UI Design / Coding",
         overview: "Test hjemmeside til en urmærke.",
+        github_link: "https://github.com/smw22/watch-shop",
         },
         {
         id: 5,

@@ -16,7 +16,7 @@
                 <p class="about-me-text">
                     Jeg har erfaring med forskellige projekter, der involverer teamwork og soloarbejde, hvor jeg har haft mulighed for at bruge mine forskellige færdigheder og kompetencer. Jeg lærer hurtigt og er villig til at mestre ethvert værktøj, der bruges på min arbejdsplads. Jeg har været i IT-sektoren i nogle år, og jeg er meget fortrolig med at arbejde med forskellige værktøjer og wireframes.                
                 </p>
-                <button class="about-me-button">Hent mit CV!</button>
+                <button onclick="window.open('https://acrobat.adobe.com/id/urn:aaid:sc:EU:cd0bef85-29d9-4a9d-9e26-c40e7b5d6d6f', '_blank')" class="about-me-button">Hent mit CV!</button>
             </div>
             <div class="cv-video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/9V5VSG3U1GM?si=N2w5Jdvpie86u7yk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -100,18 +100,22 @@
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
+                margin-bottom: 10px;
             }
             .about-me-button{
                 width: fit-content;
                 padding: 10px 15px;
                 border-radius: 50px;
-                color: #e0e0e0;
-                background-image: linear-gradient(30deg, #2E005D , #FF6622);
-                border: 0;
+                color: #000;
+                border: 2px solid #ff6622;
                 font-weight: 700;
                 font-size: 14px;
                 box-shadow: 1px 1px 5px #000;
-
+                transition: 0.3s all ease;
+            }
+            .about-me-button:hover{
+                color: white;
+                background-color: #ff6622;
             }
         }
 

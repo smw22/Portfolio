@@ -54,7 +54,7 @@ const toggleMenu = () => {
     </header>
     <main>
         <div v-if="!specificPortfolioItems">
-            No such portfolio item exist
+            Der findes ikke et sådant porteføljeelement
         </div>
         <div v-else>
             <div class="project-site-container">
@@ -89,13 +89,21 @@ const toggleMenu = () => {
                             <p> {{ specificPortfolioItems.description }}</p>
                     </div>
                     <div class="project-buttons">
-                        <button class="project-button">
+                        <button onclick="window.open('{{ github_link }}', '_blank')" class="project-button">
                             GitHub
                         </button>
-                        <button class="project-button">
+                        <button onclick="window.open('{{ demo_link }}', '_blank')" class="project-button">
                             Se Demo
                         </button>
                     </div>
+                    
+
+                    <!-- <div v-if="portfolioItem.github_link">
+                    <a :href="portfolioItem.github_link">Link</a>
+                    </div>
+                    <div v-else>
+            
+                    </div> -->
 
                 </div>
             </div>
