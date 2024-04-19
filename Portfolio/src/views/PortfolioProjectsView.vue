@@ -23,27 +23,34 @@ window.addEventListener('scroll', () => {
 });
 
 
+const menuOpen = ref(false);
+
+const toggleMenu = () => {
+  menuOpen.value = !menuOpen.value;
+};
+
 </script>
 
 <template>
     <header ref="headerRef">
         <div class="name-logo">
-        <h2>SERGIO MORÓN WESTERGAARD</h2>
+        <h2><routerLink to="/" class="home-link">SERGIO MORÓN WESTERGAARD</routerLink></h2>
         </div>
         <div class="phone-name-logo">
         <h2>SMW</h2>
         </div>
         <nav>
-        <ul>
-            <li class="nav-links"><RouterLink class="home-link" to="/#scrollToOne">HJEMME</RouterLink></li>
-            <li class="nav-links"><a href="#scrollToFour" class="nav-links">KONTAKT</a></li>
-        </ul>
-        </nav>
-        <div class="phone-nav">
-            <img src="../assets/burguer-menu.png" alt="" class="phone-nav-icon">
-            <div class="phone-nav-links">
+            <ul :class="{ 'active': menuOpen }">
+                <li class="nav-links"><routerLink to="/" class="home-link">HJEMME</routerLink></li>
+                <li class="nav-links"><a href="#scrollToFour" class="nav-links">KONTAKT</a></li>
+            </ul>
+
+            <div  :class="{ 'active': menuOpen }"  class="ham-menu phone-nav" @click="toggleMenu">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </div>
+        </nav>
     </header>
     <main>
         <div v-if="!specificPortfolioItems">
@@ -77,14 +84,15 @@ window.addEventListener('scroll', () => {
                     <img :src="specificPortfolioItems.image" alt="" class="project-image">
                     </div>
 
+                    <h1 class="project-data-title">Koncept</h1>
                     <div class="text-description">
                             <p> {{ specificPortfolioItems.description }}</p>
                     </div>
                     <div class="project-buttons">
-                        <button>
+                        <button class="project-button">
                             GitHub
                         </button>
-                        <button>
+                        <button class="project-button">
                             Se Demo
                         </button>
                     </div>
@@ -109,6 +117,16 @@ window.addEventListener('scroll', () => {
         transition: all 0.4s ease-in-out;
         .name-logo {
             font-style: italic;
+            .nav-links{
+                text-decoration: none;
+                list-style-type: none;
+                color:#000;
+            }
+            .home-link{
+                color: #000;
+                list-style-type: none;
+                text-decoration: none; 
+            }
         }
         .phone-name-logo{
             font-style: italic;
@@ -118,29 +136,104 @@ window.addEventListener('scroll', () => {
             ul {
                 display: flex;
                 gap: 50px;
-                .home-link{
-                color: #000;
-                list-style-type: none;
-                font-weight: 500;
-                text-decoration: none;  
-                }
                 .nav-links {
                 color: #000;
                 list-style-type: none;
                 font-weight: 500;
                 text-decoration: none; 
                 }
+                .home-link{
+                    color: #000;
+                    list-style-type: none;
+                    font-weight: 500;
+                    text-decoration: none; 
+                }
             }
         }
         .phone-nav{
             display:none;
         }
-
     }
 
     .header-wrapper-scrolled {
         background-color: rgb(230, 230, 230);
         opacity: 1;
+    }
+    @media only screen and (max-width: 1000px) {
+        header .name-logo{
+            display: none;
+        }
+        header .phone-name-logo{
+            display: block;
+        }
+        nav .ham-menu {
+            display: block;
+            height: 40px;
+            width: 40px;
+            margin-left: auto;
+            position: relative;
+            span{
+                height: 5px;
+                width: 100%;
+                background-color: rgb(0, 0, 0);
+                border-radius: 25px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                transition: .3s ease;
+            }
+            span:nth-child(1) {
+                top: 25%;
+            }
+            span:nth-child(2) {
+                width: 66%;
+                transform: translate(-25%, -50%);
+            }
+            span:nth-child(3) {
+                top: 75%;
+                width: 33%;
+                transform: translate(50%, -50%);
+            }
+            .ham-menu.active span {
+                background-color: white;
+            }
+            .ham-menu.active span:nth-child(1) {
+                top: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+            .ham-menu.active span:nth-child(2) {
+                opacity: 0;
+            }
+            .ham-menu.active span:nth-child(3) {
+                top: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        }
+        header{
+            nav{
+                ul{
+                background-color:  #ff6622;
+                height: 60vh;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                right: 0;
+                right: -100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;    
+                justify-content: center;
+                text-align: center;
+                font-size: 20px;
+                color: white;
+                transition: .3s ease;
+                }
+                ul.active {
+                    right: 0;
+                }
+            }
+        }
     }
 
 
@@ -166,6 +259,7 @@ window.addEventListener('scroll', () => {
 
             .project-information{
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: space-around;
                 .project-data-title{
                     font-size: 2em;
@@ -177,44 +271,44 @@ window.addEventListener('scroll', () => {
             }
             .project-text{
                 text-align: center;
-                .category-button{
-                    border: solid 2px #ff6622;
-                    width: 100px;
-                    border-radius: 16px;
-                }
-                .project-buttons{
-                    display: flex;
-                    justify-content: center;
-                    gap: 50px;
-                }
             }
             .project-image-box{
+                margin-top: 50px;
+                margin-bottom: 50px;
                 width: 100%;
                 .project-image{
                     width: 100%;
+                }
+            }
+            .project-buttons{
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+                gap: 50px;
+                .project-button{
+                    padding: 5px 20px;
+                    border-radius: 25px;
+                    font-size: 16px;
+                    border: solid 2px #ff6622;
+                    color: black;
+                    transition: all 0.3s ease;
+                    background-color: white;
+                }
+                .project-button:hover{
+                    color: white;
+                    background-color: #ff6622;
                 }
             }
         }
     }
 
     @media only screen and (max-width: 1000px) {
-        header .name-logo{
-            display: none;
-        }
-        header .phone-name-logo{
-            display: block;
-        }
-        nav {
-            display: none;
-        }
-        header .phone-nav {
-            display: flex;
-            width: 40px;
-            background-color: #000;
-            .phone-nav-icon{
-                width: 100%;
-            }
+        .project-title{
+        margin: 0 auto;
+        width: fit-content;
+        font-size: 2.5em;
         }
     }
+
 </style>
 

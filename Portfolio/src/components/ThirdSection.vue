@@ -31,7 +31,7 @@ const { portfolioItems } = getPortfolio()
             <div v-for="(portfolioItem, index) in filteredPortfolioItems" :key="portfolioItem.id" class="project" :class="{ 'reverse': index % 2 !== 0 }">
 
                 <div class="project-image">
-                    <!-- <img :src="portfolioItem.image" alt=""> -->
+                    <img :src="portfolioItem.project_image" alt="" class="portfolio-image">
                 </div>
                 <div class="project-text">
                     <h1 class="project-title">{{ portfolioItem.title }}</h1>
@@ -88,10 +88,17 @@ const { portfolioItems } = getPortfolio()
                     flex-direction: row-reverse; // This will reverse the flex direction for even projects
                 }
                 .project-image{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     width: 50%;
                     aspect-ratio: 16 / 10;
                     border-radius: 25px;
                     background-image: linear-gradient(90deg, #2E005D , #FF6622);
+                    .portfolio-image{
+                        height: 80%;
+                        width: auto;
+                    }
                 }
                 .project-text{
                     width: 40%;

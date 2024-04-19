@@ -11,32 +11,45 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// const hamMenu = document.querySelector(".ham-menu");
 
+// const offScreenMenu = document.querySelector(".off-screen-menu");
+
+// hamMenu.addEventListener("click", () => {
+//   hamMenu.classList.toggle("active");
+//   ul.classList.toggle("active");
+// });
+
+
+const menuOpen = ref(false);
+
+const toggleMenu = () => {
+  menuOpen.value = !menuOpen.value;
+};
 </script>
 
 
 <template>
     <header ref="headerRef">
         <div class="name-logo">
-        <h2>SERGIO MORÓN WESTERGAARD</h2>
+        <h2><a href="#scrollToOne" class="nav-links">SERGIO MORÓN WESTERGAARD</a></h2>
         </div>
         <div class="phone-name-logo">
-        <h2>SMW</h2>
+        <h2><a href="#scrollToOne" class="nav-links">SMW</a></h2>
         </div>
         <nav>
-        <ul>
-            <li class="nav-links"><a href="#scrollToOne" class="nav-links">HJEMME</a></li>
-            <li class="nav-links"><a href="#scrollToTwo" class="nav-links">OM MIG</a></li>
-            <li class="nav-links"><a href="#scrollToThree" class="nav-links">PROJEKTER</a></li>
-            <li class="nav-links"><a href="#scrollToFour" class="nav-links">KONTAKT</a></li>
-        </ul>
+            <ul :class="{ 'active': menuOpen }">
+                <li class="nav-links"><a href="#scrollToOne" class="nav-links">HJEMME</a></li>
+                <li class="nav-links"><a href="#scrollToTwo" class="nav-links">OM MIG</a></li>
+                <li class="nav-links"><a href="#scrollToThree" class="nav-links">PROJEKTER</a></li>
+                <li class="nav-links"><a href="#scrollToFour" class="nav-links">KONTAKT</a></li>
+            </ul>
 
-        <div class="ham-menu phone-nav">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        
+            <div  :class="{ 'active': menuOpen }"  class="ham-menu phone-nav" @click="toggleMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 </template>
@@ -54,10 +67,20 @@ window.addEventListener('scroll', () => {
         transition: all 0.4s ease-in-out;
         .name-logo {
             font-style: italic;
+            .nav-links{
+                text-decoration: none;
+                list-style-type: none;
+                color:#000;
+            }
         }
         .phone-name-logo{
             font-style: italic;
             display: none;
+            .nav-links{
+                text-decoration: none;
+                list-style-type: none;
+                color:#000;
+            }
         }
         nav {
             ul {
@@ -89,14 +112,14 @@ window.addEventListener('scroll', () => {
         }
         nav .ham-menu {
             display: block;
-            height: 50px;
+            height: 40px;
             width: 40px;
             margin-left: auto;
             position: relative;
             span{
                 height: 5px;
                 width: 100%;
-                background-color: #6F86FF;
+                background-color: rgb(0, 0, 0);
                 border-radius: 25px;
                 position: absolute;
                 left: 50%;
@@ -109,12 +132,26 @@ window.addEventListener('scroll', () => {
             }
             span:nth-child(2) {
                 width: 66%;
-                transform: translate(-28%, -50%);
+                transform: translate(-25%, -50%);
             }
             span:nth-child(3) {
                 top: 75%;
                 width: 33%;
-                transform: translate(43.33%, -50%);
+                transform: translate(50%, -50%);
+            }
+            .ham-menu.active span {
+                background-color: white;
+            }
+            .ham-menu.active span:nth-child(1) {
+                top: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+            .ham-menu.active span:nth-child(2) {
+                opacity: 0;
+            }
+            .ham-menu.active span:nth-child(3) {
+                top: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
             }
         }
         header{
@@ -123,11 +160,10 @@ window.addEventListener('scroll', () => {
                 background-color:  #ff6622;
                 height: 60vh;
                 width: 100%;
-                max-width: 450px;
                 position: absolute;
                 top: 0;
                 right: 0;
-                // right: -450px;
+                right: -100%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;    
@@ -136,6 +172,9 @@ window.addEventListener('scroll', () => {
                 font-size: 20px;
                 color: white;
                 transition: .3s ease;
+                }
+                ul.active {
+                    right: 0;
                 }
             }
         }

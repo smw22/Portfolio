@@ -10,16 +10,17 @@
                 <p class="contact-address-description">sergiomoronwestergaard@gmail.com</p>
             </div>
             <div class="contact-address">
-                <h3 class="contact-address-title"><strong>Socialer</strong></h3>
+                <h3 class="contact-address-title"><strong>Medier</strong></h3>
                 <div class="contact-icons">
-                    <!-- <a href="https://www.linkedin.com/in/sergio-mw/" class="contact-icons-links"><img src="../assets/linkedin-logo.svg" alt="" class="contact-icons-images"></a>
+                    <a href="https://www.linkedin.com/in/sergio-mw/" class="contact-icons-links"><img src="../assets/linkedin-logo.svg" alt="" class="contact-icons-images"></a>
                     <a href="https://github.com/smw22" class="contact-icons-links"><img src="../assets/github-logo.svg" alt="" class="contact-icons-images"></a>
                     <a href="http://m.me/sergiomw" class="contact-icons-links"><img src="../assets/messenger-logo.svg" alt="" class="contact-icons-images"></a>
-                    <a href="https://wa.me/4550355856" class="contact-icons-links"><img src="../assets/whatsapp-logo.svg" alt="" class="contact-icons-images"></a> -->
-                    <img src="../assets/linkedin-logo.svg" alt="" class="contact-icons-images">
+                    <a href="https://wa.me/4550355856" class="contact-icons-links"><img src="../assets/whatsapp-logo.svg" alt="" class="contact-icons-images"></a>
+                   
+                    <!-- <img src="../assets/linkedin-logo.svg" alt="" class="contact-icons-images">
                     <img src="../assets/github-logo.svg" alt="" class="contact-icons-images">
                     <img src="../assets/messenger-logo.svg" alt="" class="contact-icons-images">
-                    <img src="../assets/whatsapp-logo.svg" alt="" class="contact-icons-images">
+                    <img src="../assets/whatsapp-logo.svg" alt="" class="contact-icons-images"> -->
                 </div>
             </div>
             
@@ -44,14 +45,17 @@
                 margin-bottom: 10px;
             }
             .contact-icons {
+            display: flex;
+            gap: 20px;
+            .contact-icons-links {
+                display: inline-block;
                 width: 30px;
-                display: flex;
-                gap: 20px;
-                .contact-icons-links {
-                    .contact-icons-images {
-                        width: 100%;
-                    }
+                height: auto; 
+                .contact-icons-images {
+                    width: 100%;
+                    height: auto;
                 }
+            }
             }
         }
     }
