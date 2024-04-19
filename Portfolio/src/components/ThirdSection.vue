@@ -91,7 +91,7 @@ const { portfolioItems } = getPortfolio()
                     background-image: linear-gradient(90deg, #2E005D , #FF6622);
                     .portfolio-image{
                         height: 80%;
-                        width: auto;
+                        width: 80%;
                     }
                 }
                 .project-text{
