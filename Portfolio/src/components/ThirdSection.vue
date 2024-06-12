@@ -45,14 +45,6 @@ const { portfolioItems } = getPortfolio()
                     </button>
                 </div>
 
-<!--                 
-                <div v-if="portfolioItem.link" class="link">
-                <a :href="portfolioItem.link">Link</a>
-                </div>
-                <div v-else>
-        
-                </div> -->
-
             </div>
 
         </div>
@@ -161,7 +153,7 @@ const { portfolioItems } = getPortfolio()
                 justify-content: space-between;
                 align-items: center;
                     &.reverse {
-                        flex-direction: column; // This will reverse the flex direction for even projects
+                        flex-direction: column;
                     }
                     .project-image{
                         width: 100%;

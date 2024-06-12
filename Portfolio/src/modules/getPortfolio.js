@@ -41,7 +41,7 @@ const getPortfolioItems = () => {
         category: "UI Design / Coding",
         overview: "Redesignet hjemmeside til Trapholt, en kunst museum i Kolding, Danmark.",
         github_link: "https://github.com/smw22/Trapholt",
-        demo_link: "https://sergioswordpresstest.dk/index.html",
+        demo_link: "https://sergioswordpresstest.dk",
         },
         {
         id: 3,

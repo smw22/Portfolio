@@ -116,6 +116,7 @@ const toggleMenu = () => {
             width: 40px;
             margin-left: auto;
             position: relative;
+            cursor: pointer;
             span{
                 height: 5px;
                 width: 100%;
