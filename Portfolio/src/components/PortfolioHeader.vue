@@ -100,7 +100,7 @@ const toggleMenu = () => {
     }
 
     .header-wrapper-scrolled {
-        background-color: rgb(230, 230, 230);
+        background-color:  #ff6622;
         opacity: 1;
     }
     @media only screen and (max-width: 1000px) {
