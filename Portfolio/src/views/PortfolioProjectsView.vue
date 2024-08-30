@@ -1,16 +1,17 @@
 <script setup>
 import FourthSection from '@/components/FourthSection.vue';
-
 import { ref } from 'vue'
 import { useRoute } from 'vue-router'
 import getPortfolio from '@/modules/getPortfolio'
-const { portfolioItems } = getPortfolio()
 
+const { portfolioItems } = getPortfolio()
 const route = useRoute()
 const id = ref(route.params.id)
-
 const specificPortfolioItems = portfolioItems.value.find(item => item.id == id.value)
 
+// onMounted(() => {
+//   specificPortfolioItems.value = portfolioItems.value.find(item => item.id == id.value);
+// });
 
 const headerRef = ref(null);
 
@@ -88,22 +89,40 @@ const toggleMenu = () => {
                     <div class="text-description">
                             <p> {{ specificPortfolioItems.description }}</p>
                     </div>
-                    <div class="project-buttons">
-                        <button onclick="window.open('{{ github_link }}', '_blank')" class="project-button">
+                    <!-- <div class="project-buttons">
+                        <button :onclick="window.open('{{ github_link }}', '_blank')" class="project-button">
                             GitHub
                         </button>
-                        <button onclick="window.open('{{ demo_link }}', '_blank')" class="project-button">
+                        <button :onclick="window.open('{{ demo_link }}', '_blank')" class="project-button">
                             Se Demo
                         </button>
-                    </div>
-                    
 
-                    <!-- <div v-if="portfolioItem.github_link">
-                    <a :href="portfolioItem.github_link">Link</a>
-                    </div>
-                    <div v-else>
-            
+                        
+                        <a :href="specificPortfolioItems.github_link">
+                        <button class="project-button">
+                            GitHub
+                        </button>
+                        </a>
+
+                        <a :href="specificPortfolioItems.demo_link">
+                        <button class="project-button">
+                            Se Demo
+                        </button>
+                        </a>
                     </div> -->
+
+                    <div v-if="specificPortfolioItems.github_link || specificPortfolioItems.demo_link" class="project-buttons">
+                        <a v-if="specificPortfolioItems.github_link" :href="specificPortfolioItems.github_link">
+                        <button class="project-button">
+                            GitHub
+                        </button>
+                        </a>
+                        <a v-if="specificPortfolioItems.demo_link" :href="specificPortfolioItems.demo_link">
+                        <button class="project-button">
+                            Se Demo
+                        </button>
+                        </a>
+                    </div>
 
                 </div>
             </div>
@@ -114,7 +133,80 @@ const toggleMenu = () => {
 </template>
 
 <style lang="scss" scoped>
-     header {
+    .project-title{
+        margin: 0 auto;
+        width: fit-content;
+        font-size: 4em;
+    }
+    .line{
+        height: 2px;
+        width: 100%;
+        background-color: #000;
+        margin: 0 auto 50px auto;
+    }
+
+    .project-site-container{
+        padding: 100px 10%;
+        .project-section{
+            display: flex;
+            flex-direction: column;
+
+            .project-information{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                .project-data-title{
+                    font-size: 2em;
+                    font-weight: 500;
+                }
+                .project-data{
+                    font-size: 16px;
+                }
+            }
+            .project-text{
+                text-align: center;
+            }
+            .project-image-box{
+                margin-top: 50px;
+                margin-bottom: 50px;
+                width: 100%;
+                .project-image{
+                    width: 100%;
+                }
+            }
+            .project-buttons{
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+                gap: 50px;
+                .project-button{
+                    padding: 5px 20px;
+                    border-radius: 25px;
+                    font-size: 16px;
+                    border: solid 2px #ff6622;
+                    color: black;
+                    transition: all 0.3s ease;
+                    background-color: white;
+                    cursor: pointer;
+                }
+                .project-button:hover{
+                    color: white;
+                    background-color: #ff6622;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .project-title{
+        margin: 0 auto;
+        width: fit-content;
+        font-size: 2.5em;
+        }
+    }
+
+    //header with two menues for project side (the same style as in PortfolioHeader.vue)
+    header {
         position: fixed;
         z-index: 1000;
         width: 100%;
@@ -241,80 +333,6 @@ const toggleMenu = () => {
                     right: 0;
                 }
             }
-        }
-    }
-
-
-
-
-    .project-title{
-        margin: 0 auto;
-        width: fit-content;
-        font-size: 4em;
-    }
-    .line{
-        height: 2px;
-        width: 100%;
-        background-color: #000;
-        margin: 0 auto 50px auto;
-    }
-
-    .project-site-container{
-        padding: 100px 10%;
-        .project-section{
-            display: flex;
-            flex-direction: column;
-
-            .project-information{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-around;
-                .project-data-title{
-                    font-size: 2em;
-                    font-weight: 500;
-                }
-                .project-data{
-                    font-size: 16px;
-                }
-            }
-            .project-text{
-                text-align: center;
-            }
-            .project-image-box{
-                margin-top: 50px;
-                margin-bottom: 50px;
-                width: 100%;
-                .project-image{
-                    width: 100%;
-                }
-            }
-            .project-buttons{
-                margin-top: 50px;
-                display: flex;
-                justify-content: center;
-                gap: 50px;
-                .project-button{
-                    padding: 5px 20px;
-                    border-radius: 25px;
-                    font-size: 16px;
-                    border: solid 2px #ff6622;
-                    color: black;
-                    transition: all 0.3s ease;
-                    background-color: white;
-                }
-                .project-button:hover{
-                    color: white;
-                    background-color: #ff6622;
-                }
-            }
-        }
-    }
-
-    @media only screen and (max-width: 1000px) {
-        .project-title{
-        margin: 0 auto;
-        width: fit-content;
-        font-size: 2.5em;
         }
     }
 

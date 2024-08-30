@@ -100,7 +100,7 @@ const toggleMenu = () => {
     }
 
     .header-wrapper-scrolled {
-        background-color: rgb(230, 230, 230);
+        background-color:  #ff6622;
         opacity: 1;
     }
     @media only screen and (max-width: 1000px) {
@@ -116,6 +116,7 @@ const toggleMenu = () => {
             width: 40px;
             margin-left: auto;
             position: relative;
+            cursor: pointer;
             span{
                 height: 5px;
                 width: 100%;

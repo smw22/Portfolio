@@ -112,6 +112,7 @@
                 font-size: 14px;
                 box-shadow: 1px 1px 5px #000;
                 transition: 0.3s all ease;
+                cursor: pointer;
             }
             .about-me-button:hover{
                 color: white;
