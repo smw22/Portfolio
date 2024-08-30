@@ -32,17 +32,19 @@ const toggleMenu = () => {
 <template>
     <header ref="headerRef">
         <div class="name-logo">
-        <h2><a href="#scrollToOne" class="nav-links">SERGIO MORÓN WESTERGAARD</a></h2>
+            <h2><a href="#scrollToOne" class="nav-links bold">SERGIO MORÓN WESTERGAARD</a></h2>
         </div>
+
         <div class="phone-name-logo">
-        <h2><a href="#scrollToOne" class="nav-links">SMW</a></h2>
+            <h2><a href="#scrollToOne" class="nav-links">SMW</a></h2>
         </div>
+
         <nav>
             <ul :class="{ 'active': menuOpen }">
-                <li class="nav-links"><a href="#scrollToOne" class="nav-links">HJEMME</a></li>
-                <li class="nav-links"><a href="#scrollToTwo" class="nav-links">OM MIG</a></li>
-                <li class="nav-links"><a href="#scrollToThree" class="nav-links">PROJEKTER</a></li>
-                <li class="nav-links"><a href="#scrollToFour" class="nav-links">KONTAKT</a></li>
+                <li class="nav-element"><a href="#scrollToOne" class="nav-links">HJEMME</a></li>
+                <li class="nav-element"><a href="#scrollToTwo" class="nav-links">OM MIG</a></li>
+                <li class="nav-element"><a href="#scrollToThree" class="nav-links">PROJEKTER</a></li>
+                <li class="nav-element"><a href="#scrollToFour" class="nav-links">KONTAKT</a></li>
             </ul>
 
             <div  :class="{ 'active': menuOpen }"  class="ham-menu phone-nav" @click="toggleMenu">
@@ -65,34 +67,32 @@ const toggleMenu = () => {
         justify-content: space-around;
         align-items: center;
         transition: all 0.4s ease-in-out;
-        .name-logo {
-            font-style: italic;
-            .nav-links{
-                text-decoration: none;
-                list-style-type: none;
-                color:#000;
-            }
-        }
-        .phone-name-logo{
-            font-style: italic;
-            display: none;
-            .nav-links{
-                text-decoration: none;
-                list-style-type: none;
-                color:#000;
-            }
-        }
         nav {
             ul {
                 display: flex;
                 gap: 50px;
-                .nav-links {
-                color: #000;
-                list-style-type: none;
-                font-weight: 500;
-                text-decoration: none; 
-                }
             }
+        }
+        .name-logo {
+            font-style: italic;
+            .bold{
+                font-weight: bold;
+            }
+        }
+        .nav-element{
+            text-decoration: none;
+            list-style-type: none;
+            color:#000;
+        }
+        .nav-links{
+            text-decoration: none;
+            list-style-type: none;
+            color:#000;
+            font-weight: 500;
+        }
+        .phone-name-logo{
+            font-style: italic;
+            display: none;
         }
         .phone-nav{
             display:none;

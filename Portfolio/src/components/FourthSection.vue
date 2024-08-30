@@ -7,7 +7,7 @@
         <div class="contact-addresses">
             <div class="contact-address">
                 <h3 class="contact-address-title"><strong>Email</strong></h3>
-                <p class="contact-address-description">sergiomoronwestergaard@gmail.com</p>
+                <p class="contact-address-description">sergiomoronwestergaard<br class="responsive">@gmail.com</p>
             </div>
             <div class="contact-address">
                 <h3 class="contact-address-title"><strong>Medier</strong></h3>
@@ -36,6 +36,9 @@
         .contact-title {
             font-size: 40px;
             margin-bottom: 20px;
+        }
+        .responsive{
+            display: none;
         }
         .contact-addresses {
             display: flex;
@@ -72,6 +75,13 @@
                 .contact-address-description {
                 font-size: 15px;
                 }   
+            }
+        }
+    }
+    @media only screen and (max-width: 400px) {
+        .fourth-container {
+            .responsive{
+                display: block;
             }
         }
     }

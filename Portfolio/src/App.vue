@@ -15,6 +15,7 @@ html {
 }
 body {
   margin: 0 !important;
+  background-color: #f5f5f5;
 }
 *{
   margin: 0;
