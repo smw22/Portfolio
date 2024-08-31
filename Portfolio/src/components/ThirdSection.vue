@@ -72,6 +72,9 @@ const { portfolioItems } = getPortfolio()
             align-items: center;
                 &.reverse {
                     flex-direction: row-reverse; // This will reverse the flex direction for even projects
+                    // .project-image{
+                    // background-color: #ff6e2f;
+                    // }
                 }
                 .project-image{
                     display: flex;
@@ -81,6 +84,7 @@ const { portfolioItems } = getPortfolio()
                     aspect-ratio: 16 / 10;
                     border-radius: 25px;
                     background-image: linear-gradient(90deg, #2E005D , #FF6622);
+                    // background-color: #a748ff;
                     .portfolio-image{
                         height: 80%;
                         width: 80%;
@@ -107,6 +111,10 @@ const { portfolioItems } = getPortfolio()
                         font-weight: 700;
                         font-size: 14px;
                         background-image: linear-gradient(30deg, #2E005D , #FF6622);
+                    }
+                    .project-button:hover{
+                        color: black;
+                        scale: 1.1
                     }
                     // .project-button:hover{
                     //     background-image: linear-gradient(30deg, #2E005D , #FF6622);

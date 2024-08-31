@@ -16,7 +16,7 @@
                 <p class="about-me-text">
                     Jeg har erfaring med forskellige projekter, der involverer teamwork og soloarbejde, hvor jeg har haft mulighed for at bruge mine forskellige færdigheder og kompetencer. Jeg lærer hurtigt og er villig til at mestre ethvert værktøj, der bruges på min arbejdsplads. Jeg har været i IT-sektoren i nogle år, og jeg er meget fortrolig med at arbejde med forskellige værktøjer og wireframes.                
                 </p>
-                <button onclick="window.open('https://acrobat.adobe.com/id/urn:aaid:sc:EU:cd0bef85-29d9-4a9d-9e26-c40e7b5d6d6f', '_blank')" class="about-me-button">Hent mit CV!</button>
+                <button onclick="window.open('https://acrobat.adobe.com/id/urn:aaid:sc:EU:233b5f54-aad7-4af5-8a7a-112496fe70bf?viewer%21megaVerb=group-discover', '_blank')" class="about-me-button">Hent mit CV!</button>
             </div>
             <!-- <div class="cv-video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/9V5VSG3U1GM?si=N2w5Jdvpie86u7yk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
