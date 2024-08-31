@@ -21,6 +21,9 @@
             <!-- <div class="cv-video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/9V5VSG3U1GM?si=N2w5Jdvpie86u7yk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>   -->
+            <div class="illustration">
+                <img src="../assets/bear-illustration.png" alt="" class="bear-illustration">
+            </div>
         </div>
 
         <h1 class="tech-stack-title">Tech Stack</h1>
@@ -117,6 +120,11 @@
             .about-me-button:hover{
                 color: white;
                 background-color: #ff6622;
+            }
+            .illustration{
+                .bear-illustration{
+                    width: 300px;
+                }
             }
         }
 

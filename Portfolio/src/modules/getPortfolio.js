@@ -9,8 +9,8 @@ import project_image2 from '@/assets/trapholt-img.png'
 import image3 from '@/assets/kantine-app-phone.png'
 import project_image3 from '@/assets/kantine-app-image.png'
 
-import image4 from '@/assets/watch-shop-img.png'
-import project_image4 from '@/assets/watch-shop-img.png'
+import image4 from '@/assets/fantasy-festival-img.png'
+import project_image4 from '@/assets/fantasy-festival.jpg'
 
 import image5 from '@/assets/assasin-app-phone.png'
 import project_image5 from '@/assets/assasin-app-image.png'
@@ -26,7 +26,7 @@ const getPortfolioItems = () => {
         image: image1,
         project_image: project_image1,
         date: "23/03/2024",
-        category: "UI Design / Coding",
+        category: "UI Design / Kodning",
         overview: "Udvikling af hjemmeside til Maysol, en ejemdomsmægler i Fuengirola, Spanien.",
         github_link: "https://github.com/smw22/maysol-website",
         demo_link: "https://smwur.dk/"
@@ -38,10 +38,9 @@ const getPortfolioItems = () => {
         image: image2,
         project_image: project_image2,
         date: "16/12/2023",
-        category: "UI Design / Coding",
+        category: "UI Design / Kodning",
         overview: "Redesignet hjemmeside til Trapholt, en kunst museum i Kolding, Danmark.",
         github_link: "https://github.com/smw22/Trapholt",
-        demo_link: "https://sergioswordpresstest.dk",
         },
         {
         id: 3,
@@ -56,15 +55,16 @@ const getPortfolioItems = () => {
         },
         {
         id: 4,
-        title: 'Watch Shop',
-        description: 'En lille praktisk hjemmeside til salg af ure online. Et godt eksempel på et nyt urmærke, der ønsker at blive digitalt.',
+        title: 'Fantasy Festival',
+        description: 'En hjemmeside for Fantasy Festivals "quest event". Det er en hjemmeside der forklare questen og hjælper med at sælger billeter.',
         button: 'Læse mere',
         image: image4,
         project_image: project_image4,
-        date: "23/11/2023",
-        category: "UI Design / Coding",
-        overview: "Test hjemmeside til en urmærke.",
-        github_link: "https://github.com/smw22/watch-shop",
+        date: "30/05/2024",
+        category: "UI Design / Kodning",
+        overview: "Hjemmeside for Fantasy Festivals event",
+        github_link: "https://github.com/smw22/fantasy_festival",
+        demo_link: "https://sergioswordpresstest.dk",
         },
         {
         id: 5,
