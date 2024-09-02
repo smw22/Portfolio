@@ -49,8 +49,9 @@
                         <div class="app"><img src="../assets/html-logo.webp" alt="" class="app-image"></div>
                         <div class="app"><img src="../assets/css-logo.webp" alt="" class="app-image"></div>
                         <div class="app"><img src="../assets/javascript-logo.png" alt="" class="app-image"></div>
-                        <div class="app"><img src="../assets/php-logo.png" alt="" class="app-image"></div>
+                        <div class="app"><img src="../assets/wordpress-logo.png" alt="" class="app-image"></div>
                         <div class="app"><img src="../assets/bootstrap-logo.png" alt="" class="app-image"></div>
+                        <div class="app"><img src="../assets/sass-logo.png" alt="" class="app-image"></div>
                         <div class="app"><img src="../assets/vue-logo.png" alt="" class="app-image"></div>
                     </div>
                 </div>
@@ -152,7 +153,7 @@
                 justify-content: center;
                 gap: 30px;
                     .app{
-                        width: 50px;
+                        width: auto;
                         height: 50px;
                         border-radius: 100%;
                         .app-image{

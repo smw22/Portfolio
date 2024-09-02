@@ -3,6 +3,7 @@ import FourthSection from '@/components/FourthSection.vue';
 import { ref } from 'vue'
 import { useRoute } from 'vue-router'
 import getPortfolio from '@/modules/getPortfolio'
+import { onMounted } from 'vue';
 
 const { portfolioItems } = getPortfolio()
 const route = useRoute()
@@ -29,6 +30,11 @@ const menuOpen = ref(false);
 const toggleMenu = () => {
   menuOpen.value = !menuOpen.value;
 };
+
+onMounted(() => {
+  // Ensure the scroll is set to the top of the page on load
+  window.scrollTo(0, 0);
+});
 
 </script>
 
