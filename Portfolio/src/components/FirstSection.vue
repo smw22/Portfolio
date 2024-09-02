@@ -135,7 +135,7 @@
 
             @keyframes bounce1 {
                 0% {transform: translateX(0) translateY(0);}
-                25% {transform: translateX(200px) translateY(-50px);}
+                25% {transform: translateX(100px) translateY(-50px);}
                 50% {transform: translateX(10px) translateY(50px);}
                 75% {transform: translateX(-150px) translateY(-150px);}
                 100% {transform: translateX(0) translateY(0);}
@@ -186,35 +186,35 @@
                 100% {transform: translateX(0) translateY(0);}
             }
 
-            .blur-svg-5{
-                top: 50%;
-                right: 50%;
-                animation: 10s all linear infinite;
-                animation-name: bounce5;
-            }
+            // .blur-svg-5{
+            //     top: 50%;
+            //     right: 50%;
+            //     animation: 10s all linear infinite;
+            //     animation-name: bounce5;
+            // }
 
-            @keyframes bounce5 {
-                0% {transform: translateX(0) translateY(0);}
-                25% {transform: translateX(150px) translateY(100px);}
-                50% {transform: translateX(0) translateY(-300px);}
-                75% {transform: translateX(100px) translateY(0);}
-                100% {transform: translateX(0) translateY(0);}
-            }
+            // @keyframes bounce5 {
+            //     0% {transform: translateX(0) translateY(0);}
+            //     25% {transform: translateX(150px) translateY(100px);}
+            //     50% {transform: translateX(0) translateY(-300px);}
+            //     75% {transform: translateX(100px) translateY(0);}
+            //     100% {transform: translateX(0) translateY(0);}
+            // }
 
-            .blur-svg-6{
-                top: 50%;
-                left: 50%;
-                animation: 10s all linear infinite;
-                animation-name: bounce6;
-            }
+            // .blur-svg-6{
+            //     top: 50%;
+            //     left: 50%;
+            //     animation: 10s all linear infinite;
+            //     animation-name: bounce6;
+            // }
 
-            @keyframes bounce6 {
-                0% {transform: translateX(0) translateY(0);}
-                25% {transform: translateX(50px) translateY(-100px);}
-                50% {transform: translateX(-100px) translateY(0);}
-                75% {transform: translateX(100px) translateY(200px);}
-                100% {transform: translateX(0) translateY(0);}
-            }
+            // @keyframes bounce6 {
+            //     0% {transform: translateX(0) translateY(0);}
+            //     25% {transform: translateX(50px) translateY(-100px);}
+            //     50% {transform: translateX(-100px) translateY(0);}
+            //     75% {transform: translateX(100px) translateY(200px);}
+            //     100% {transform: translateX(0) translateY(0);}
+            // }
 
             
         }

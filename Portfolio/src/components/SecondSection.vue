@@ -53,6 +53,8 @@
                         <div class="app"><img src="../assets/bootstrap-logo.png" alt="" class="app-image"></div>
                         <div class="app"><img src="../assets/sass-logo.png" alt="" class="app-image"></div>
                         <div class="app"><img src="../assets/vue-logo.png" alt="" class="app-image"></div>
+                        <div class="app"><img src="../assets/git-logo.png" alt="" class="app-image"></div>
+                        <div class="app"><img src="../assets/github-logo.png" alt="" class="app-image"></div>
                     </div>
                 </div>
 
@@ -147,6 +149,7 @@
                 align-items: center;
                 margin-bottom: 30px;
                 gap: 20px;
+                padding: 0 20px;
                 .tech-stack-item-apps{
                 display: flex;
                 flex-wrap: wrap;
