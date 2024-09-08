@@ -36,7 +36,7 @@ const { portfolioItems } = getPortfolio()
                 <div class="project-text">
                     <h1 class="project-title">{{ portfolioItem.title }}</h1>
                     <div class="project-description">
-                        {{ portfolioItem.description }}                  
+                        {{ portfolioItem.overview }}                  
                     </div>
                     <button class="project-button">
                         <router-link :to="`/projects/${portfolioItem.id}`" class="project-button">
