@@ -34,7 +34,7 @@ const getPortfolioItems = () => {
         {
         id: 2,
         title: 'Fantasy Festival',
-        description: 'En hjemmeside for Fantasy Festivals "quest event". Det er en hjemmeside der forklare questen og hjælper med at sælger billeter. For at skabe spænding og interesse blandt questens deltagerne har man brugt visualle baggrunde ',
+        description: 'En hjemmeside for Fantasy Festivals "quest event". Det er en hjemmeside der forklare questen og hjælper med at sælger billeter. For at skabe spænding og interesse blandt questens deltagerne har man brugt visualle baggrunde. ',
         button: 'Læse mere',
         image: image4,
         project_image: project_image4,
