@@ -16,7 +16,7 @@
                 <p class="about-me-text">
                     Jeg har erfaring med forskellige projekter, der involverer teamwork og soloarbejde, hvor jeg har haft mulighed for at bruge mine forskellige færdigheder og kompetencer. Jeg lærer hurtigt og er villig til at mestre ethvert værktøj, der bruges på min arbejdsplads. Jeg har været i IT-sektoren i nogle år, og jeg er meget fortrolig med at arbejde med forskellige værktøjer og wireframes.                
                 </p>
-                <button onclick="window.open('https://acrobat.adobe.com/id/urn:aaid:sc:EU:cb15456e-76bb-495e-9c21-ba524ac2bd38', '_blank')" class="about-me-button">Hent mit CV!</button>
+                <button onclick="window.open('https://acrobat.adobe.com/id/urn:aaid:sc:EU:ef957637-be2c-47cb-8941-19ba79d79066', '_blank')" class="about-me-button">Hent mit CV!</button>
             </div>
 
             <div class="illustration">
@@ -48,9 +48,10 @@
                         <div class="app"><img src="../assets/css-logo.webp" alt="" class="app-image"></div>
                         <div class="app"><img src="../assets/javascript-logo.png" alt="" class="app-image"></div>
                         <div class="app"><img src="../assets/wordpress-logo.png" alt="" class="app-image"></div>
-                        <div class="app"><img src="../assets/bootstrap-logo.png" alt="" class="app-image"></div>
+                        <div class="app"><img src="../assets/tailwind-logo.png" alt="" class="app-image"></div>
                         <div class="app"><img src="../assets/sass-logo.png" alt="" class="app-image"></div>
                         <div class="app"><img src="../assets/vue-logo.png" alt="" class="app-image"></div>
+                        <div class="app"><img src="../assets/react-logo.webp" alt="" class="app-image"></div>
                         <div class="app"><img src="../assets/git-logo.png" alt="" class="app-image"></div>
                         <div class="app"><img src="../assets/github-logo.png" alt="" class="app-image"></div>
                     </div>
@@ -63,7 +64,6 @@
                 <div class="tech-stack-item">
                     <h3>XD / UI</h3>
                     <div class="tech-stack-item-apps">
-                        <div class="app"><img src="../assets/xd-logo.png" alt="" class="app-image"></div>
                         <div class="app"><img src="../assets/figma-logo.png" alt="" class="app-image"></div>
                     </div>
                 </div>
